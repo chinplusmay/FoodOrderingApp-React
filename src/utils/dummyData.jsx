@@ -15,7 +15,7 @@ const resList = [
             "Chinese",
             "Seafood"
         ],
-        "avgRating": 4.6,
+        "avgRating": 3.4,
         "parentId": "635",
         "avgRatingString": "4.6",
         "totalRatingsString": "187K+",
@@ -283,7 +283,7 @@ const resList = [
             "Burgers",
             "American"
         ],
-        "avgRating": 4.2,
+        "avgRating": 2.4,
         "parentId": "166",
         "avgRatingString": "4.2",
         "totalRatingsString": "102K+",
@@ -673,7 +673,7 @@ const resList = [
             "Thalis",
             "Biryani"
         ],
-        "avgRating": 4.6,
+        "avgRating": 3.7,
         "parentId": "76139",
         "avgRatingString": "4.6",
         "totalRatingsString": "9.1K+",

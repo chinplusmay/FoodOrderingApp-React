@@ -2,6 +2,8 @@ import React from "react";
 
 
 const Header = () => {
+
+    const btnName = "Login";
     return(
     <div className="header">
         <img className="logocontainer"
@@ -13,6 +15,7 @@ const Header = () => {
                 <li>About</li>
                 <li>Contact</li>
                 <li>Cart</li>
+                <button className="login" >{btnName}</button>
             </ul>
         </div>
     </div>
