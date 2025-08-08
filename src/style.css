@@ -46,7 +46,7 @@
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
 .res-logo{
@@ -56,10 +56,31 @@
 .shimmer-container{
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-evenly;
+  margin: auto;
 }
 .shimmer-cards{
   width: 231px;
   height: 494px;
   margin: 5px;
+  padding-left: 2px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
   background-color: gray;
 }
+
+.filter-search{
+  display: flex;
+}
+
+.filter-in{
+  width: 150px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.filter-btn{
+  height: 30px;
+  width: 50px;
+  margin-left: 10px;
