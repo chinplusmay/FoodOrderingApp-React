@@ -6,11 +6,13 @@ import { API_URL } from "../utils/constants";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
+    
     const [listOfRestaurant, SetRestaurant] = useState([]);
     const [filtreredlistOfRestaurant, SetfiltreredlistOfRestaurant] = useState([]);  // copy of listOfRestaurant
 
     
     const[filterSearch, setfilterSearch] = useState("");
+    
     
     //Whenever the state variable changes, React triggers a reconcilliation cycle(re-renders the comp)
 
