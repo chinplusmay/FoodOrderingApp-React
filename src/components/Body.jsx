@@ -4,6 +4,7 @@ import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/dummyData";
 import { API_URL } from "../utils/constants";
 import Shimmer from "./Shimmer";
+import { Link, Links } from "react-router-dom";
 
 const Body = () => {
     
@@ -58,7 +59,7 @@ const Body = () => {
                         }}
                     />
                     <button className="filter-btn" type="button" 
-                        onClick={() => {
+                         onClick={() => {
                             const filteredRestaurants = listOfRestaurant.filter((res) => 
                             res.info.name.toLowerCase().includes(filterSearch.toLowerCase())
                             );
@@ -71,7 +72,11 @@ const Body = () => {
                 </div>
                 <div className="res-container" style={{backgroundColor:"#f0f0f0"}}>
                     {filtreredlistOfRestaurant.map((resto) => (
-                        <RestaurantCard key={resto.info.id} resData={resto} />
+                        <Link
+                            key={resto.info.id}
+                            to={"restaurants/"+resto.info.id}
+                        >
+                        <RestaurantCard resData={resto} /></Link>
                     ))}
                     
                 </div>

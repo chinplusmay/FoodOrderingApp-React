@@ -5,6 +5,11 @@
   padding: 0px 11px
 }
 
+.logocontainer{
+  height: 100px;
+  width: 100px;
+}
+
 .header{
   margin: 0 20px;
 }
@@ -12,6 +17,7 @@
 .nav-items > ul{
   display: flex;
   font-size: 20px;
+  margin-top: 41px;
 }
 
 .nav-items > ul > li{
@@ -84,3 +90,4 @@
   height: 30px;
   width: 50px;
   margin-left: 10px;
+}
