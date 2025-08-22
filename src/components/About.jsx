@@ -9,7 +9,7 @@ class About extends React.Component{
         console.log("Parent Constructor")
     }
     componentDidMount() {
-    console.log("P Component mounted!");
+    // console.log("P Component mounted!");
   }
 
     render(){
@@ -19,11 +19,7 @@ class About extends React.Component{
                 <h1>About</h1>
                 <h2>This is about page</h2>
                 <UserClass name={"chin"} location={"ohio"} contact={"911"} />
-                {console.log("Child1 Render")}
-                <UserClass name={"doni"} location={"negro"} contact={"911"} />
-                {console.log("Child1 Render")}
-
-
+                {/* {console.log("Child1 Render")} */}
             </div>
         )
     }
