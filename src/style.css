@@ -1,64 +1,5 @@
-.header{
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid black;
-  padding: 0px 11px
-}
 
-.logocontainer{
-  height: 100px;
-  width: 100px;
-}
-
-.header{
-  margin: 0 20px;
-}
-
-.nav-items > ul{
-  display: flex;
-  font-size: 20px;
-  margin-top: 41px;
-}
-
-.nav-items > ul > li{
-  list-style: none;
-  margin: 0 10px;
-}
-
-.toprated{
-  height: 30px;
-  padding: 10px;
-}
-
-.res-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px; /* optional for spacing */
-  justify-content: space-evenly; /* or flex-start / space-between */
-  width: 100%; /* let it expand fully */
-  max-width: 1300px; /* optional: constrain total width */
-  margin: auto; /* center the container */
-}
-
-.res-card:hover{
-  border: 1px solid black;
-  cursor: pointer;
-}
-.res-card {
-  width: 231px;
-  height: 494px;
-  margin: 5px;
-  padding-left: 2px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background-color: #fff;
-  border-radius: 8px;
-}
-
-.res-logo{
-  width: 231px;
-}
-
+/*
 .shimmer-container{
   display: flex;
   flex-wrap: wrap;
@@ -75,19 +16,7 @@
   border: 1px solid #e0e0e0;
   background-color: gray;
 }
+*/
 
-.filter-search{
-  display: flex;
-}
+@import "tailwindcss";
 
-.filter-in{
-  width: 150px;
-  height: 25px;
-  margin-left: 10px;
-}
-
-.filter-btn{
-  height: 30px;
-  width: 50px;
-  margin-left: 10px;
-}
