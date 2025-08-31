@@ -27,6 +27,21 @@ const RestaurantCard = (props) =>{
             <h4>{sla.deliveryTime} minutes</h4>
         </div>
     );
+};
+
+// higher order component
+
+export const withOpenLabel = () =>{
+    return (props) => {
+        return(
+            <div>
+                <label className="absolute bg-green-400 m-3 p-1 rounded-lg">
+                    Open
+                </label>
+                <RestaurantCard {...props}/>
+            </div>
+        );
+    }
 }
 
 export default RestaurantCard;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 import ReactDOM from "react-dom/client";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withOpenLabel} from "./RestaurantCard";
 import resList from "../utils/dummyData";
 import { API_URL } from "../utils/constants";
 import Shimmer from "./Shimmer";
@@ -14,7 +14,8 @@ const Body = () => {
 
     
     const[filterSearch, setfilterSearch] = useState("");
-    
+
+    const RestaurantsOpen = withOpenLabel(RestaurantCard);    
     
     //Whenever the state variable changes, React triggers a reconcilliation cycle(re-renders the comp)
 
@@ -50,7 +51,7 @@ const Body = () => {
                     <button className="toprated-bt bg-blue-500 text-white px-4 py-2 rounded mr-4" 
                         onClick={() => {
                             const filteredList = listOfRestaurant.filter((res) => (
-                                res.info.avgRating > 4.5
+                                res.info.avgRating > 4
                             ))
                             SetfiltreredlistOfRestaurant(filteredList);
                         }}
@@ -87,7 +88,11 @@ const Body = () => {
                             key={resto.info.id}
                             to={"restaurants/"+resto.info.id}
                         >
-                        <RestaurantCard resData={resto} /></Link>
+                        {
+                        resto.info.isOpen === true ? <RestaurantsOpen resData={resto} /> :
+                        <RestaurantCard resData={resto} />
+                        }
+                        </Link>
                     ))}
                     
                 </div>
